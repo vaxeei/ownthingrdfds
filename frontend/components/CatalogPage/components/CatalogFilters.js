@@ -178,7 +178,7 @@ function CatalogFilters() {
                         }}
                         checked={store.creatorOption === 2}
                     />
-                    <label htmlFor="creator-2">ROBLOX</label>
+                    <label htmlFor="creator-2">Blockverse</label>
                 </div>
                 <div className={`${s.priceContainer} radio2019`}>
                     <input

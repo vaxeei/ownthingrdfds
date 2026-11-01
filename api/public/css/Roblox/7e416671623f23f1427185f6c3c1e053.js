@@ -52,7 +52,7 @@ if (!self.__WB_pmw) {
       weakKey: "Please create a more complex password",
       invalidCharacters: "Spaces and special characters are not allowed.",
       invalidName: "Usernames may only contain letters, numbers, and _",
-      cantBeUsed: "Username not appropriate for ROBLOX",
+      cantBeUsed: "Username not appropriate for BLOCKVERSE",
       alreadyTaken: "This username is already in use.",
       userNameRange: "Usernames can be 3 to 20 characters long",
       startsOrEndsWithUnderscore: "Username can't start or end with _",

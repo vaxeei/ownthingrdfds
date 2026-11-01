@@ -113,7 +113,7 @@ var Roblox=Roblox||{};Roblox.StringFormat=function(){String.prototype.format=fun
 var Roblox=Roblox||{};Roblox.SignupTrackingScript=function(){function n(n,t){RobloxEventManager.triggerEvent("rbx_evt_signup",{age:n,gender:t})}return{trackingScript:n}}();
 
 ;// Tracking/AsyncGoogleOnScript.js
-var Roblox=Roblox||{};Roblox.AsyncGoogleOnScript=function(){function n(n,t){GoogleAnalyticsEvents&&GoogleAnalyticsEvents.FireEvent(["Signup","Signup - Roblox",n,t])}return{googleGoalFire:n}}();
+var Roblox=Roblox||{};Roblox.AsyncGoogleOnScript=function(){function n(n,t){GoogleAnalyticsEvents&&GoogleAnalyticsEvents.FireEvent(["Signup","Signup - Blockverse",n,t])}return{googleGoalFire:n}}();
 
 ;//Bundle detector
 Roblox && Roblox.BundleDetector && Roblox.BundleDetector.bundleDetected('leanbase');

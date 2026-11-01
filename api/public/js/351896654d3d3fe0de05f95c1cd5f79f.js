@@ -2605,7 +2605,7 @@ Roblox.JSErrorTracker = {
                 Roblox.JSErrorTracker.fireGAPixel(Roblox.JSErrorTracker.distillGAData(n, i));
                 break;
             default:
-                console.log("Roblox JSErrorTracker received an unknown pixel to fire")
+                console.log("Blockverse JSErrorTracker received an unknown pixel to fire")
             }
             return !0
         }
@@ -13397,7 +13397,7 @@ Roblox.SignupTrackingScript = function() {
 ;var Roblox = Roblox || {};
 Roblox.AsyncGoogleOnScript = function() {
     function n(n, t) {
-        GoogleAnalyticsEvents && GoogleAnalyticsEvents.FireEvent(["Signup", "Signup - Roblox", n, t])
+        GoogleAnalyticsEvents && GoogleAnalyticsEvents.FireEvent(["Signup", "Signup - Blockverse", n, t])
     }
     return {
         googleGoalFire: n
@@ -13989,7 +13989,7 @@ RobloxLaunch.StartGameWork = function(n, t, i, r, u) {
                 try {
                     window.external.StartGame(r, i, n)
                 } catch (c) {
-                    throw new Error("window.external fallback failed, Roblox must not be installed or IE cannot access ActiveX");
+                    throw new Error("window.external fallback failed, Blockverse must not be installed or IE cannot access ActiveX");
                 }
             else
                 throw new Error("launcher is null or undefined and external is missing");
@@ -14164,7 +14164,7 @@ RBX.PlaceLauncher.prototype = {
             MadStatus.manualUpdate("The game you requested is currently full. Waiting for an opening...", !0, !0);
             break;
         case 7:
-            MadStatus.manualUpdate("Roblox is updating. Please wait...", !0);
+            MadStatus.manualUpdate("Blockverse is updating. Please wait...", !0);
             break;
         case 8:
             MadStatus.manualUpdate("Requesting a server", !0);
@@ -14358,11 +14358,11 @@ Roblox.Lang["Feature.GameLaunchGuestMode"] = {
     "Action.Dialog.SignUp": "Sign Up",
     "Action.Dialog.SignUpNow": "Sign up now!",
     "Description.Dialog.SignUpOrLogin": "To play games, chat with friends, or customize your avatar, you'll need an account. Sign up for a free account or log in to play now.",
-    "Description.Dialog.SignUpTodayOneDayRemaining": "You are playing in guest mode. To use all features available on Roblox, you will need to create an account. You have less than a day left before we require free sign up.",
-    "Description.Dialog.SignUpTodaySomeDaysRemaining": "You are playing in guest mode. To use all features available on Roblox, you will need to create an account. You have less than {numDays} days left before we require free sign up.",
+    "Description.Dialog.SignUpTodayOneDayRemaining": "You are playing in guest mode. To use all features available on Blockverse, you will need to create an account. You have less than a day left before we require free sign up.",
+    "Description.Dialog.SignUpTodaySomeDaysRemaining": "You are playing in guest mode. To use all features available on Blockverse, you will need to create an account. You have less than {numDays} days left before we require free sign up.",
     "Description.Dialog.TrialOver": "Your trial period has ended. Please sign up to play games - it's free!",
-    "Description.Dialog.YouArePlayingOneDayRemaining": "You are playing in guest mode. To use all features available on Roblox, you will need to create an account. You have 1 gameplay left before we require free sign up.",
-    "Description.Dialog.YouArePlayingSomeDaysRemaining": "You are playing in guest mode. To use all features available on Roblox, you will need to create an account. You have {numDays} gameplays left before we require free sign up.",
+    "Description.Dialog.YouArePlayingOneDayRemaining": "You are playing in guest mode. To use all features available on Blockverse, you will need to create an account. You have 1 gameplay left before we require free sign up.",
+    "Description.Dialog.YouArePlayingSomeDaysRemaining": "You are playing in guest mode. To use all features available on Blockverse, you will need to create an account. You have {numDays} gameplays left before we require free sign up.",
     "Heading.ChooseAvatar": "Choose Your Avatar",
     "Heading.Dialog.SignUpOrLogin": "Sign up for a free account or log in!",
     "Heading.Dialog.SignUpToday": "Sign Up Today!",
@@ -14624,11 +14624,11 @@ Roblox.Lang["Common.VisitGame"] = {
     "Heading.SwitchToDesktopToPlay": "Switch to Desktop Mode to Play Games",
     "Label.BuyAccess": "Buy Access for {robux} Robux",
     "Label.Cancel": "Cancel",
-    "Label.CheckingForStudio": "Checking for Roblox Studio...",
+    "Label.CheckingForStudio": "Checking for Blockverse Studio...",
     "Label.ClickHereForHelp": "Click here for help",
     "Label.ConnectingToPlayers": "Connecting to Players...",
     "Label.DevelopPageTitle": "Develop",
-    "Label.DownloadInstallRoblox": "Download and Install Roblox",
+    "Label.DownloadInstallRoblox": "Download and Install Blockverse",
     "Label.DownloadStudio": "Download Studio",
     "Label.GameConfigurePageTitle": "Game Configure",
     "Label.GameFreeSoothsayer": "Free because you are a soothsayer",
@@ -14650,42 +14650,42 @@ Roblox.Lang["Common.VisitGame"] = {
     "Label.GameWarning": "Warning",
     "Label.InstallationInstructions": "Installation Instructions",
     "Label.LaunchApplication": "Launch Application",
-    "Label.OperaInstallSteps": "1) A window will open. Click {startBold}Open{endBold}.{breakLine}2) Doubleclick the Roblox icon.",
+    "Label.OperaInstallSteps": "1) A window will open. Click {startBold}Open{endBold}.{breakLine}2) Doubleclick the Blockverse icon.",
     "Label.PersuadeToDevelopRoblox": "Get started creating your own games!",
     "Label.PersuadeToInstallRoblox": "You're moments away from getting into the game!",
     "Label.Play": "Play",
     "Label.PlayInApp": "Play in App",
-    "Label.RobloxLoadingToPlay": "Roblox is now loading. Get ready to play!",
+    "Label.RobloxLoadingToPlay": "Blockverse is now loading. Get ready to play!",
     "Label.StartingRoblox": "Starting Roblox...",
     "Label.SwitchToDesktopMode": "Switch to Desktop Mode",
     "Label.UniverseConfigurePageTitle": "Universe Configuration",
-    "Response.CheckAlwaysOpenRoblox": "Check {startBold}Always open links for Roblox{endBold} and click {startBold2}Open Roblox{endBold2} in the dialog box above to join games faster in the future!",
-    "Response.CheckAlwaysOpenRobloxURL": "Check {startBold}Always open links for URL: Roblox Protocol{endBold} and click {startBold2}Open URL: Roblox Protocol{endBold2} in the dialog box above to join games faster in the future!",
+    "Response.CheckAlwaysOpenRoblox": "Check {startBold}Always open links for Blockverse{endBold} and click {startBold2}Open Blockverse{endBold2} in the dialog box above to join games faster in the future!",
+    "Response.CheckAlwaysOpenRobloxURL": "Check {startBold}Always open links for URL: Blockverse Protocol{endBold} and click {startBold2}Open URL: Blockverse Protocol{endBold2} in the dialog box above to join games faster in the future!",
     "Response.CheckRememberMyChoiceOK": "Check {startBold}Remember my choice{endBold} and click {startBold2}OK{endBold2} in the dialog box above to join games faster in the future!",
     "Response.Dialog.ClickHere": "Click here!",
     "Response.Dialog.ErrorLaunching": "An error occurred trying to launch the game.  Please try again later.",
-    "Response.Dialog.HavingTroubleInstallQuestion": "Having trouble installing Roblox?",
-    "Response.Dialog.InstallingMessageWithLink": "The Roblox installer should download shortly. If it doesn’t, start the {linkStart}download now.{linkEnd}",
+    "Response.Dialog.HavingTroubleInstallQuestion": "Having trouble installing Blockverse?",
+    "Response.Dialog.InstallingMessageWithLink": "The Blockverse installer should download shortly. If it doesn’t, start the {linkStart}download now.{linkEnd}",
     "Response.Dialog.MacChromeFifthInstruction": "After installation, click {startBold}Play{endBold} below to join the action!",
-    "Response.Dialog.MacChromeFirstInstruction": "Click {startBold}Roblox.dmg{endBold} to run the Roblox installer, which just downloaded via your web browser.",
+    "Response.Dialog.MacChromeFirstInstruction": "Click {startBold}Roblox.dmg{endBold} to run the Blockverse installer, which just downloaded via your web browser.",
     "Response.Dialog.MacChromeFourthInstruction": "Click {startBold}Ok{endBold} once you've successfully installed Roblox.",
-    "Response.Dialog.MacChromeSecondInstruction": "Double-click the Roblox app icon to begin the installation process.",
+    "Response.Dialog.MacChromeSecondInstruction": "Double-click the Blockverse app icon to begin the installation process.",
     "Response.Dialog.MacChromeThirdInstruction": "Click {startBold}Open{endBold} when prompted by your computer.",
     "Response.Dialog.MacFirefoxFifthInstruction": "Then select the {startBold}Remember my choice...{endBold} checkbox and click {startBold2}OK{endBold2}",
     "Response.Dialog.MacFirefoxFirstInstruction": "Select {startBold}Open with{endBold} and click {startBold2}OK{endBold2}",
     "Response.Dialog.MacFirefoxFourthInstruction": "Once installed, click {startBold}Play{endBold} to join the action!",
-    "Response.Dialog.MacFirefoxSecondInstruction": "Double-click the {startBold}Roblox Icon{endBold} to begin the installation process",
+    "Response.Dialog.MacFirefoxSecondInstruction": "Double-click the {startBold}Blockverse Icon{endBold} to begin the installation process",
     "Response.Dialog.MacFirefoxThirdInstruction": "You will receive a warning, click {startBold}Open{endBold}",
     "Response.Dialog.MacSafariFirstInstruction": "Go to Downloads and double-click {startBold}Roblox.dmg{endBold}",
     "Response.Dialog.MacSafariFourthInstruction": "Once installed, click {startBold}Play{endBold} to join the action!",
-    "Response.Dialog.MacSafariSecondInstruction": "Double-click the {startBold}Roblox Icon{endBold} to begin the installation process",
+    "Response.Dialog.MacSafariSecondInstruction": "Double-click the {startBold}Blockverse Icon{endBold} to begin the installation process",
     "Response.Dialog.MacSafariThirdInstruction": "You will receive a warning, click {startBold}Open{endBold}",
-    "Response.Dialog.PcChromeFirstInstruction": "Click {startBold}RobloxPlayer.exe{endBold} to run the Roblox installer, which just downloaded via your web browser.",
+    "Response.Dialog.PcChromeFirstInstruction": "Click {startBold}RobloxPlayer.exe{endBold} to run the Blockverse installer, which just downloaded via your web browser.",
     "Response.Dialog.PcChromeFourthInstruction": "After installation, click {startBold}Play{endBold} below to join the action!",
     "Response.Dialog.PcChromeSecondInstruction": "Click {startBold}Run{endBold} when prompted by your computer to begin the installation process.",
     "Response.Dialog.PcChromeThirdInstruction": "Click {startBold}Ok{endBold} once you've successfully installed Roblox.",
-    "Response.Dialog.PcEdgeFirstInstruction": "Click {startBold}Run{endBold} to install Roblox after the download finishes",
-    "Response.Dialog.PcEdgeSecondInstruction": "Click {startBold}Ok{endBold} to finish installing Roblox",
+    "Response.Dialog.PcEdgeFirstInstruction": "Click {startBold}Run{endBold} to install Blockverse after the download finishes",
+    "Response.Dialog.PcEdgeSecondInstruction": "Click {startBold}Ok{endBold} to finish installing Blockverse",
     "Response.Dialog.PcEdgeThirdInstruction": "Click the {startBold}Play{endBold} button to join the action!",
     "Response.Dialog.PcFirefoxFifthInstruction": "Click {startBold}Ok{endBold} when the alert pops up",
     "Response.Dialog.PcFirefoxFirstInstruction": "Click {startBold}Save File{endBold} when the download window pops up",
@@ -14696,9 +14696,9 @@ Roblox.Lang["Common.VisitGame"] = {
     "Response.Dialog.PcIeInstructionOne": "You will receive a warning, click {startBold}Run{endBold}",
     "Response.Dialog.PcIeInstructionThree": "Click {startBold}Run{endBold}",
     "Response.Dialog.PcIeInstructionTwo": "Go to Downloads and double click {startBold}RobloxPlayer.exe{endBold}",
-    "Response.Dialog.PcIESecondInstruction": "Click {startBold}Ok{endBold} once you've installed Roblox",
+    "Response.Dialog.PcIESecondInstruction": "Click {startBold}Ok{endBold} once you've installed Blockverse",
     "Response.Dialog.PcIEThirdInstruction": "Once installed, click {startBold}Play{endBold} to join the action!",
-    "Response.Dialog.ThanksForPlayingRoblox": "Thanks for playing Roblox",
+    "Response.Dialog.ThanksForPlayingRoblox": "Thanks for playing Blockverse",
     "Response.GameTemporarilyUnavailable": "Unable to verify that you have access to this game.  Please try again later.",
     "Response.RememberMyChoiceAppLaunch": "Check {startBold}Remember my choice{endBold} and click {appLaunchLink} in the dialog box above to join games faster in the future!"
 },
