@@ -926,7 +926,7 @@ Roblox = Roblox || {}, Roblox.ShopAmazon = function() {
     function t() {
         $("a.roblox-shop-interstitial").on("click", function(n) {
             n.preventDefault(), Roblox.Dialog.open({
-                titleText: "You are leaving Roblox",
+                titleText: "You are leaving Blockverse",
                 bodyContent: r(),
                 allowHtmlContentInBody: !0,
                 acceptText: "Continue to Shop",
@@ -944,7 +944,7 @@ Roblox = Roblox || {}, Roblox.ShopAmazon = function() {
     }
 
     function r() {
-        return "<p>Your are about to visit our amazon store. You will be redirected to Roblox merchandise store on <a class='text-link' target='_blank' href='" + n + "' >Amazon.com</a>.</p> <p>Please note that you need to be over 18 to purchase products online. The amazon store is not part of Roblox.com and is governed by a separate privacy policy.</p>"
+        return "<p>Your are about to visit our amazon store. You will be redirected to Blockverse merchandise store on <a class='text-link' target='_blank' href='" + n + "' >Amazon.com</a>.</p> <p>Please note that you need to be over 18 to purchase products online. The amazon store is not part of Roblox.com and is governed by a separate privacy policy.</p>"
     }
 
     function u() {
@@ -1245,10 +1245,10 @@ contactUpsell.constant("contactUpsellLabelConstants", {
     addNow: "Add Now",
     verifyEmail: "Verify Email",
     addPhonePrompt: "Please add a phone number to your account to ensure that you never get locked out of your account.",
-    addEmailUnder13Prompt: "Please add your parent's email address to your account to ensure that you can always access your Roblox account.",
-    addEmail13AndOverPrompt: "Please add an email address to your account to ensure that you can always access your Roblox account.",
-    verifyEmailUnder13Prompt: "Please verify your parent's email address to ensure that you can always access your Roblox account.",
-    verifyEmail13AndOverPrompt: "Please verify your email address to ensure that you can always access your Roblox account.",
+    addEmailUnder13Prompt: "Please add your parent's email address to your account to ensure that you can always access your Blockverse account.",
+    addEmail13AndOverPrompt: "Please add an email address to your account to ensure that you can always access your Blockverse account.",
+    verifyEmailUnder13Prompt: "Please verify your parent's email address to ensure that you can always access your Blockverse account.",
+    verifyEmail13AndOverPrompt: "Please verify your email address to ensure that you can always access your Blockverse account.",
     addEmailInstructionsUnder13: "Please enter your parent's email address. We will send a link to complete verification.",
     addEmailInstructions13AndOver: "Please enter your email address. We will send a link to complete verification.",
     contactFriendFinderPhoneUpsellPrompt: "Please add a phone number to your account so that your friends can find you!",
@@ -1490,7 +1490,7 @@ emailModal.constant("emailModalLabelConstants", {
     verifyEmail: "Verify Email",
     parentsEmailPlaceholder: "Parent's Email Address",
     emailPlaceholder: "Email Address",
-    verifyPasswordPlaceholder: "Roblox Account Password",
+    verifyPasswordPlaceholder: "Blockverse Account Password",
     success: "Success",
     invalidEmail: "Invalid email",
     errorMessage: "An error occurred",
@@ -6261,7 +6261,7 @@ robloxApp.constant("phoneLabelConstants", {
     resendCode: "Resend Code",
     enterCodeInstructions: "Enter the code in the text sent to ",
     phonePlaceholder: "Phone Number",
-    verifyPasswordPlaceholder: "Roblox Account Password",
+    verifyPasswordPlaceholder: "Blockverse Account Password",
     codePlaceholderPt1: "Enter Code (",
     codePlaceholderPt2: "- digit)",
     success: "Success",
@@ -6518,7 +6518,7 @@ $(function() {
                     tosLinkEnd: "</a>",
                     legalChangesLinkStart: o,
                     legalChangesLinkEnd: "</a>"
-                }), i = f.f(Roblox.Lang.legal["Label.IAgree"])) : (n = "TERMS OF USE AGREEMENT", t = 'By clicking "I Agree", you are agreeing to the <a href="https://www.roblox.com/info/terms" class="text-link" target="_blank">Roblox Terms of Use</a>. This includes the license to Roblox of past and future content you provide to the service for our use online, offline, and in tangible items. You can learn more about what is changing <a href="https://www.roblox.com/info/latest-changes" class="text-link" target="_blank">here</a>.', i = "I AGREE"), r = "/UserCheck/update-tos-licensing"), showTosModal(n, t, i, r)
+                }), i = f.f(Roblox.Lang.legal["Label.IAgree"])) : (n = "TERMS OF USE AGREEMENT", t = 'By clicking "I Agree", you are agreeing to the <a href="https://www.roblox.com/info/terms" class="text-link" target="_blank">Blockverse Terms of Use</a>. This includes the license to Blockverse of past and future content you provide to the service for our use online, offline, and in tangible items. You can learn more about what is changing <a href="https://www.roblox.com/info/latest-changes" class="text-link" target="_blank">here</a>.', i = "I AGREE"), r = "/UserCheck/update-tos-licensing"), showTosModal(n, t, i, r)
             }
         },
         error: function() {}

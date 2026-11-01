@@ -1063,7 +1063,7 @@ typeof Roblox == "undefined" && (Roblox = {}), Roblox.JSErrorTracker = {
 					Roblox.JSErrorTracker.fireGAPixel(Roblox.JSErrorTracker.distillGAData(n, i));
 					break;
 				default:
-					console.log("Roblox JSErrorTracker received an unknown pixel to fire")
+					console.log("Blockverse JSErrorTracker received an unknown pixel to fire")
 			}
 			return !0
 		}
@@ -6154,7 +6154,7 @@ Roblox.SignupTrackingScript = function() {
 var Roblox = Roblox || {};
 Roblox.AsyncGoogleOnScript = function() {
 	function n(n, t) {
-		GoogleAnalyticsEvents && GoogleAnalyticsEvents.FireEvent(["Signup", "Signup - Roblox", n, t])
+		GoogleAnalyticsEvents && GoogleAnalyticsEvents.FireEvent(["Signup", "Signup - Blockverse", n, t])
 	}
 	return {
 		googleGoalFire: n
@@ -6617,7 +6617,7 @@ RobloxLaunch.RequestPlayWithParty = function(n, t, i, r) {
 				try {
 					window.external.StartGame(r, i, n)
 				} catch (c) {
-					throw new Error("window.external fallback failed, Roblox must not be installed or IE cannot access ActiveX");
+					throw new Error("window.external fallback failed, Blockverse must not be installed or IE cannot access ActiveX");
 				}
 			else
 				throw new Error("launcher is null or undefined and external is missing");
@@ -6730,7 +6730,7 @@ RobloxLaunch.RequestPlayWithParty = function(n, t, i, r) {
 				MadStatus.manualUpdate("The game you requested is currently full. Waiting for an opening...", !0, !0);
 				break;
 			case 7:
-				MadStatus.manualUpdate("Roblox is updating. Please wait...", !0);
+				MadStatus.manualUpdate("Blockverse is updating. Please wait...", !0);
 				break;
 			case 8:
 				MadStatus.manualUpdate("Requesting a server", !0);

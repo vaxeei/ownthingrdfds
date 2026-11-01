@@ -66,7 +66,7 @@
 		<div class="col-12 col-md-4">
 			<label for="ownership">Asset ownership</label>
 			<select id="ownership" class="form-control dark-input" bind:value={ownership} disabled={disabled}>
-				<option value="roblox">ROBLOX owned</option>
+				<option value="roblox">Blockverse owned</option>
 				<option value="user">User owned</option>
 			</select>
 		</div>
@@ -88,7 +88,7 @@
 		{#if matchedCount !== undefined}
 			<div class="col-12 mt-4">
 				<div class="alert alert-info">
-					Queued {matchedCount} {ownership === "roblox" ? "ROBLOX-owned" : "user-owned"} approved catalog
+					Queued {matchedCount} {ownership === "roblox" ? "Blockverse-owned" : "user-owned"} approved catalog
 					item{matchedCount === 1 ? "" : "s"} for re-render.
 				</div>
 			</div>

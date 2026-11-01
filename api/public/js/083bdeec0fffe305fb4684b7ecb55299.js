@@ -709,7 +709,7 @@ Roblox.ShopAmazon = function() {
         $("a.roblox-shop-interstitial").on("click", function(n) {
             n.preventDefault(),
             Roblox.Dialog.open({
-                titleText: "You are leaving ROBLOX",
+                titleText: "You are leaving BLOCKVERSE",
                 bodyContent: r(),
                 allowHtmlContentInBody: !0,
                 acceptText: "Continue to Shop",
@@ -725,7 +725,7 @@ Roblox.ShopAmazon = function() {
         window.open(n, "_blank")
     }
     function r() {
-        return "<p>Your are about to visit our amazon store. You will be redirected to ROBLOX merchandise store on <a class='text-link' target='_blank' href='" + n + "' >Amazon.com</a>.</p> <p>Please note that you need to be over 18 to purchase products online. The amazon store is not part of pekora.zip and is governed by a separate privacy policy.</p>"
+        return "<p>Your are about to visit our amazon store. You will be redirected to BLOCKVERSE merchandise store on <a class='text-link' target='_blank' href='" + n + "' >Amazon.com</a>.</p> <p>Please note that you need to be over 18 to purchase products online. The amazon store is not part of pekora.zip and is governed by a separate privacy policy.</p>"
     }
     function u() {
         t()

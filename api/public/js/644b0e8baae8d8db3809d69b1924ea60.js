@@ -240,7 +240,7 @@ RobloxLaunch.RequestPlayWithParty = function(n, t, i, r) {
       if (Roblox.Client.isRobloxBrowser()) try {
         window.external.StartGame(r, i, n)
       } catch (l) {
-        throw "window.external fallback failed, Roblox must not be installed or IE cannot access ActiveX";
+        throw "window.external fallback failed, Blockverse must not be installed or IE cannot access ActiveX";
       } else throw "launcher is null or undefined and external is missing";
       RobloxLaunch.state = RobloxLaunchStates.None, $.modal.close()
     }
@@ -291,7 +291,7 @@ RobloxLaunch.RequestPlayWithParty = function(n, t, i, r) {
       if (Roblox.Client.isRobloxBrowser()) try {
         window.external.StartGame(i, t, n)
       } catch (s) {
-        throw "window.external fallback failed, Roblox must not be installed or IE cannot access ActiveX";
+        throw "window.external fallback failed, Blockverse must not be installed or IE cannot access ActiveX";
       } else throw "launcher is null or undefined and external is missing";
       RobloxLaunch.state = RobloxLaunchStates.None, $.modal.close()
     }
@@ -402,7 +402,7 @@ RobloxLaunch.RequestPlayWithParty = function(n, t, i, r) {
         MadStatus.manualUpdate("The game you requested is currently full. Waiting for an opening...", !0, !1);
         break;
       case 7:
-        MadStatus.manualUpdate("Roblox is updating. Please wait...", !0);
+        MadStatus.manualUpdate("Blockverse is updating. Please wait...", !0);
         break;
       case 8:
         MadStatus.manualUpdate("Requesting a server", !0);
@@ -1113,7 +1113,7 @@ $(function() {
   }), n = t.first(), n.addClass("selectedType"), getSelectedTemplateType().show(), Roblox.require("Widgets.PlaceImage", function() {
     Roblox.Widgets.PlaceImage.populate()
   }), $(".template").click(function() {
-    Roblox.Client.isIDE() ? window.editTemplateInStudio($(this).attr("placeid")) : Roblox.GenericModal.open("New Project", "/images/Icons/img-alert.png", "To build using this template, open to this page in <a target='_blank' href='http://wiki.rbx2016.nl/index.php/Studio'>ROBLOX Studio</a>.")
+    Roblox.Client.isIDE() ? window.editTemplateInStudio($(this).attr("placeid")) : Roblox.GenericModal.open("New Project", "/images/Icons/img-alert.png", "To build using this template, open to this page in <a target='_blank' href='http://wiki.rbx2016.nl/index.php/Studio'>BLOCKVERSE Studio</a>.")
   }), $(".template a").removeAttr("href")
 });
 

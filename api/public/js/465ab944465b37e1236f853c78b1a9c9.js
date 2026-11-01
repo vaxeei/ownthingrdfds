@@ -107,7 +107,7 @@ var Roblox=Roblox||{};Roblox.StringFormat=function(){String.prototype.format=fun
 var Roblox=Roblox||{};Roblox.SignupTrackingScript=function(){function n(n,t){RobloxEventManager.triggerEvent("rbx_evt_signup",{age:n,gender:t})}return{trackingScript:n}}();
 
 ;// Tracking/AsyncGoogleOnScript.js
-var Roblox=Roblox||{};Roblox.AsyncGoogleOnScript=function(){function n(n,t){GoogleAnalyticsEvents&&GoogleAnalyticsEvents.FireEvent(["Signup","Signup - Roblox",n,t])}return{googleGoalFire:n}}();
+var Roblox=Roblox||{};Roblox.AsyncGoogleOnScript=function(){function n(n,t){GoogleAnalyticsEvents&&GoogleAnalyticsEvents.FireEvent(["Signup","Signup - Blockverse",n,t])}return{googleGoalFire:n}}();
 
 ;// DropDownNav.js
 (function(){function r(t){var r=$(t.target),f,u;r.attr("drop-down-nav-button")||(r=r.parents("[drop-down-nav-button]")),r.addClass("active"),f=r.attr("drop-down-nav-button"),u=n.filter('[data-drop-down-nav-container="'+f+'"]'),u.show(),n.not(u).hide(),i.not(r).removeClass("active"),t.stopPropagation(),r.trigger("showDropDown")}function u(n){$("[drop-down-nav-button]").unbind("click",e),r(n),$("[drop-down-nav-button]").bind("mouseleave",f)}function f(){t(),$("[drop-down-nav-button]").unbind("mouseleave",f)}function e(n){$("[drop-down-nav-button]").unbind("mouseenter",u),r(n),$(document).bind("click",function(){t()}),$("[drop-down-nav-button]").bind("click",o)}function o(){$(document).unbind("click",function(){t()}),t(),$("[drop-down-nav-button]").bind("click",r)}function t(){n.hide(),i.removeClass("active")}var n,i;$(function(){n=$("[data-drop-down-nav-container]"),i=$("[drop-down-nav-button]"),$("[drop-down-nav-button]").bind("click",e),$("[drop-down-nav-button]").bind("mouseenter",u)})})();
